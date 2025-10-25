@@ -94,8 +94,8 @@ export class CountryModel {
   }
 
   static async getTopByGDP(limit = 5) {
-    const query = 'SELECT name, estimated_gdp FROM countries WHERE estimated_gdp IS NOT NULL ORDER BY estimated_gdp DESC LIMIT ?';
-    const [rows] = await pool.execute(query, [limit]);
+    const query = `SELECT name, estimated_gdp FROM countries WHERE estimated_gdp IS NOT NULL ORDER BY estimated_gdp DESC LIMIT ${parseInt(limit)}`;
+    const [rows] = await pool.execute(query);
     return rows;
   }
 }
