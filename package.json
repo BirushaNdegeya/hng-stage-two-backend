@@ -1,7 +1,7 @@
 {
-  "name": "hng-stage-zero-backend",
+  "name": "hng-stage-two-backend",
   "version": "1.0.0",
-  "description": "A RESTful API endpoint that serves profile information combined with dynamic cat facts from an external API. This project demonstrates API integration, JSON response formatting, and dynamic data handling. ",
+  "description": "Country Currency & Exchange API - HNG Stage 2 Backend",
   "type": "module",
   "main": "index.js",
   "scripts": {
@@ -18,10 +18,13 @@
   "license": "ISC",
   "packageManager": "pnpm@10.14.0",
   "dependencies": {
+    "axios": "^1.6.0",
+    "canvas": "^2.11.2",
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
-    "express-rate-limit": "^8.1.0"
+    "express-rate-limit": "^8.1.0",
+    "mysql2": "^3.6.5"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
